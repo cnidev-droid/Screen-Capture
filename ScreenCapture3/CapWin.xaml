@@ -1,0 +1,10 @@
+﻿<Window x:Class="ScreenCapture3.CapWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" WindowStyle="None" AllowsTransparency="True" IsHitTestVisible="True" ResizeMode="CanResizeWithGrip" Background="Transparent">
+    <Grid x:Name="MyGrid" MouseDown="Grid_MouseDown" MouseRightButtonUp="Grid_MouseRightButtonUp" SizeChanged="Grid_SizeChanged">
+        <Grid.Background>
+            <SolidColorBrush Color="#73B2F5" Opacity="0.4"/>
+        </Grid.Background>
+    </Grid>
+</Window>

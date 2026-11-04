@@ -1,0 +1,30 @@
+﻿<Window x:Class="ScreenCapture3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenCapture3"
+        mc:Ignorable="d"
+        Title="Screen Capture 3" Height="400" Width="600" AllowDrop="True" Background="#FF65C7ED">
+    <Grid>
+        <Button x:Name="BtnTakeCap" Content="Take Cap" HorizontalAlignment="Left" Margin="8,4,0,0" VerticalAlignment="Top" Width="58" Click="BtnTakeCap_Click"/>
+        <CheckBox x:Name="chkBoxBmp" Content="bmp" HorizontalAlignment="Left" Margin="9,76,0,0" VerticalAlignment="Top" Checked="chkBoxBmp_Checked" Unchecked="chkBoxBmp_Unchecked"/>
+        <TextBlock x:Name="TxtBlMsg" HorizontalAlignment="Left" Margin="71,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="FileName"/></TextBlock>
+        <Image x:Name="image" Margin="10,160,10,10"/>
+        <TextBox x:Name="TxtBoName" HorizontalAlignment="Left" Height="23" Margin="356,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnOpenLocation" Content="Open dir" HorizontalAlignment="Left" Margin="126,100,0,0" VerticalAlignment="Top" Width="86" Click="BtnOpenLocation_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="292,102,0,0" TextWrapping="Wrap" Text="Give name" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxtBoDir" ToolTip="Drop new save dir here or type nrw save dir and press Enter key" HorizontalAlignment="Left" Height="23" Margin="10,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="572" PreviewDragOver="TxtBoDir_PreviewDragOver" PreviewDrop="TxtBoDir_PreviewDrop" Grid.ColumnSpan="2" KeyDown="TxtBoDir_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="483,101,0,0" TextWrapping="Wrap" Text="Else time" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="303,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Cap size"/></TextBlock>
+        <TextBox x:Name="TxtBoCapSize" HorizontalAlignment="Left" Height="23" Margin="356,38,0,0" TextWrapping="Wrap" Text="w*h" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="ChkBoxAutoCap" Content="Auto cap active" HorizontalAlignment="Left" Margin="62,76,0,0" VerticalAlignment="Top" Checked="ChkBoxAutoCap_Checked" Unchecked="ChkBoxAutoCap_Unchecked"/>
+        <TextBlock HorizontalAlignment="Left" Margin="14,103,0,0" TextWrapping="Wrap" Text="Save scr cap to dir" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="177,76,0,0" TextWrapping="Wrap" Text="Mouse pos x y:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TxtBlMousePosXY" HorizontalAlignment="Left" Margin="264,76,0,0" TextWrapping="Wrap" Text="x y" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxtBoRGB" HorizontalAlignment="Left" Height="23" Margin="356,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="142"/>
+        <CheckBox x:Name="ChkBoxLock" Content="_lock" HorizontalAlignment="Left" Margin="511,70,0,0" VerticalAlignment="Top" Checked="ChkBoxLock_Checked" Unchecked="ChkBoxLock_Unchecked"/>
+        <CheckBox x:Name="ChkBoxMouse" Content="include mouse" HorizontalAlignment="Left" Margin="482,43,0,0" VerticalAlignment="Top" Checked="ChkBoxMouse_Checked" Unchecked="ChkBoxMouse_Unchecked"/>
+
+    </Grid>
+</Window>
